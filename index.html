@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="main_bg">
+
+        <!-- Navbar -->
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="./index.html">Homepage <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Product
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pricing Page
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact_us">NewsBlog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact_us">Posts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- First Section Banner Section -->
+
+        <section class="banner_section">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6">
+                        <div class="banner_text">
+                            <h4>Europe’s first
+                                HyperLocal flat <br />
+                                fee AI-only cloud for:
+                            </h4>
+                            <h5>Machine Learning,</h5>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="banner_image">
+                            <img src="./images/chc.gif" alt="banner-img">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="order_now_btn">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Client Logos Section -->
+
+        <section class="client_logo_container">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-2 client_logos">
+                        <img src="./images/nvidia.png" alt="nvidia" />
+                    </div>
+
+                    <div class="col-md-2 client_logos">
+                        <img src="./images/graphcore.png" alt="graphcore" />
+                    </div>
+
+                    <div class="col-md-2 client_logos">
+                        <img src="./images/hawlete.png" alt="hawlete" />
+                    </div>
+
+                    <div class="col-md-2 client_logos">
+                        <img src="./images/supermicro.png" alt="supermicro" />
+                    </div>
+
+                    <div class="col-md-2 text-center client_logos">
+                        <img src="./images/dell.png" alt="dell" />
+                    </div>
+
+                    <div class="col-md-2 client_logos">
+                        <img src="./images/nokia.png" alt="nokia" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider Section -->
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="testimonial_carousel">
+                            <div class="testimonial_container">
+                                <p>“ You’re not alone. Tens of thousands of accounting professionals find them-selves
+                                    wasting time ”</p>
+                            </div>
+
+                            <div class="testimonial_container">
+                                <p>“ You’re not alone. Tens of thousands of accounting professionals find them-selves
+                                    wasting time ”</p>
+                            </div>
+
+                            <div class="testimonial_container">
+                                <p>“ You’re not alone. Tens of thousands of accounting professionals find them-selves
+                                    wasting time ”</p>
+                            </div>
+
+                            <div class="testimonial_container">
+                                <p>“ You’re not alone. Tens of thousands of accounting professionals find them-selves
+                                    wasting time ”</p>
+                            </div>
+
+                            <div class="testimonial_container">
+                                <p>“ You’re not alone. Tens of thousands of accounting professionals find them-selves
+                                    wasting time ”</p>
+                            </div>
+
+                            <div class="testimonial_container">
+                                <p>“ You’re not alone. Tens of thousands of accounting professionals find them-selves
+                                    wasting time ”</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Pricing Section -->
+
+        <section class="pricing_section">
+            <div class="contanier">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="pricing_container">
+                            <h4>Our <span>Pricing</span></h4>
+                        </div>
+                        <div class="basic_card">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-3">
+                                    <div class="basic_content">
+                                        <h3>BASIC</h3>
+                                        <h6>2.99$</h6>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="tick_container">
+                                        <p> <img src="./images/tick.png" alt="tick" /> Sample Test Here</p>
+                                        <p class="another_text"> <img src="./images/cross.png" alt="cross" /> Sample
+                                            Test Here</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="tick_container">
+                                        <p> <img src="./images/cross.png" alt="cross" /> Sample Test Here</p>
+                                        <p class="another_text"> <img src="./images/cross.png" alt="cross" /> Sample
+                                            Test Here</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="tick_btn_container">
+                                        <p> <img src="./images/cross.png" alt="cross" /> Sample Test Here
+                                        </p>
+                                        <div class="Btn_container">
+                                            <button>Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+
+                        <div class="basic_card">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-3">
+                                    <div class="basic_content">
+                                        <h3>BASIC</h3>
+                                        <h6>2.99$</h6>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="tick_container">
+                                        <p> <img src="./images/tick.png" alt="tick" /> Sample Test Here</p>
+                                        <p class="another_text"> <img src="./images/cross.png" alt="cross" /> Sample
+                                            Test Here</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="tick_container">
+                                        <p> <img src="./images/cross.png" alt="cross" /> Sample Test Here</p>
+                                        <p class="another_text"> <img src="./images/cross.png" alt="cross" /> Sample
+                                            Test Here</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="tick_btn_container">
+                                        <p> <img src="./images/cross.png" alt="cross" /> Sample Test Here
+                                        </p>
+                                        <div class="Btn_container">
+                                            <button>Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Product Overview Section -->
+
+        <section class="product_overview_section">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-12">
+                        <div class="product_main">
+                            <div>
+                                <h4>PRODUCT <span>OVERVIEW</span></h4>
+                            </div>
+                            <div class="graphic_cards_main tab">
+                                <div>
+                                    <button class="tablinks" onclick="openCity(event, 'Nvidia')">Nvidia</button>
+                                </div>
+
+                                <div>
+                                    <button class="tablinks" onclick="openCity(event, 'Graphcore')">Graphcore</button>
+                                </div>
+
+                                <div>
+                                    <button class="tablinks" onclick="openCity(event, 'SoftwareSDK')"
+                                        id="defaultOpen">Software SDK</button>
+                                </div>
+
+                                <div>
+                                    <button class="tablinks" onclick="openCity(event, 'UseCases')">Use cases</button>
+                                </div>
+
+                                <div>
+                                    <button class="tablinks"
+                                        onclick="openCity(event, 'Performance')">Performance</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- First Tab Content -->
+                <div class="tabcontent" id="Nvidia">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-7">
+                            <div class="tab_container_text">
+                                <h4>Nvidia</h4>
+                                <p>You’re not alone. Tens of thousands of accounting professionals
+                                    time and money every year. </p>
+                                <p class="mt-4">It is an industry-leading solution designed to take the hassle Our
+                                    flexible,cloud-based solution automates the process of
+                                    categorizing transactions, allowing you to streamline your process, increase
+                                    accuracy,
+                                    and reduce costs. </p>
+                                <div class="view_more_btn_container">
+                                    <button class="not_hover_Btn_bg">View More</button>
+                                    <button class="on_hover_btn">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="tab_image_container">
+                                <img src="./images/product-overview.png" alt="product-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Tab Content -->
+                <div class="tabcontent" id="Graphcore">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-7">
+                            <div class="tab_container_text">
+                                <h4>Graphcore</h4>
+                                <p>Tens of thousands of accounting professionals find themselves
+                                    wasting
+                                    time and money every year. </p>
+                                <p class="mt-4">XXX is an industry-leading solution designed to take the hassle out of
+                                    your
+                                    bookkeeping processes. Our flexible, cloud-based solution automates the process of
+                                    categorizing transactions, allowing you to streamline your process, increase
+                                    accuracy,
+                                    and reduce costs. </p>
+                                <div class="view_more_btn_container">
+                                    <button class="not_hover_Btn_bg">View More</button>
+                                    <button class="on_hover_btn">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="tab_image_container">
+                                <img src="./images/product-overview.png" alt="product-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Tab Content -->
+                <div class="tabcontent" id="SoftwareSDK">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-7">
+                            <div class="tab_container_text">
+                                <h4>SOFTWARE SDK</h4>
+                                <p>You’re not alone. Tens of thousands of accounting professionals find themselves
+                                    wasting
+                                    time and money every year. Thankfully, there’s a solution. </p>
+                                <p class="mt-4">XXX is an industry-leading solution designed to take the hassle out of
+                                    your
+                                    bookkeeping processes. Our flexible, cloud-based solution automates the process of
+                                    categorizing transactions, allowing you to streamline your process, increase
+                                    accuracy,
+                                    and reduce costs. </p>
+                                <div class="view_more_btn_container">
+                                    <button class="not_hover_Btn_bg">View More</button>
+                                    <button class="on_hover_btn">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="tab_image_container">
+                                <img src="./images/product-overview.png" alt="product-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fourth Tab Content -->
+
+                <div class="tabcontent" id="UseCases">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-7">
+                            <div class="tab_container_text">
+                                <h4>Use Cases</h4>
+                                <p>You’re not alone. Tens of thousands of accounting professionals find themselves
+                                    wasting
+                                    time and money every year.</p>
+                                <p class="mt-4">XXX is an industry-leading solution designed to take the hassle out of
+                                    your
+                                    bookkeeping processes.</p>
+                                <div class="view_more_btn_container">
+                                    <button class="not_hover_Btn_bg">View More</button>
+                                    <button class="on_hover_btn">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="tab_image_container">
+                                <img src="./images/product-overview.png" alt="product-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fifth Tab Content -->
+
+                <div class="tabcontent" id="Performance">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-7">
+                            <div class="tab_container_text">
+                                <h4>Performance</h4>
+                                <p>You’re not alone. Tens of thousands of accounting professionals.Thankfully, there’s a
+                                    solution. </p>
+                                <p class="mt-4">It industry-leading solution designed to take the hassle out of your
+                                    bookkeeping processes.</p>
+                                <div class="view_more_btn_container">
+                                    <button class="not_hover_Btn_bg">View More</button>
+                                    <button class="on_hover_btn">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="tab_image_container">
+                                <img src="./images/product-overview.png" alt="product-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+
+        <section class="about_us_section">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6">
+                        <div class="about_us_image_container">
+                            <img src="./images/about-us.png" alt="about-us">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="about_us_text_container">
+                            <h4>ABOUT <span>US</span></h4>
+                            <p class="mt-4">You’re not alone. Tens of thousands of accounting professionals find
+                                themselves wasting time and money every year. Thankfully, there’s a solution.</p>
+                            <p class="mt-4">XXX is an industry-leading solution designed to take the hassle out of your
+                                bookkeeping processes. Our flexible, cloud-based solution automates the process of
+                                categorizing transactions, allowing you to streamline your process, increase accuracy,
+                                and reduce costs. </p>
+                        </div>
+                        <div class="view_more_btn_container about_btn">
+                            <button class="not_hover_Btn_bg">View More</button>
+                            <button class="on_hover_btn">View More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs Section -->
+
+        <section class="blogs_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="blogs_head">
+                            <h4>OUR <span>BLOGS</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="chat_gpt">
+                            <h6>ChatGPT: Optimizing Language Models for Dialogue</h6>
+                            <p>November 30, 2022 — Announcements, Research</p>
+                        </div>
+                        <div class="chat_gpt">
+                            <h6>ChatGPT: Optimizing Language Models for Dialogue</h6>
+                            <p>November 30, 2022 — Announcements, Research</p>
+                        </div>
+                        <div class="chat_gpt">
+                            <h6>ChatGPT: Optimizing Language Models for Dialogue</h6>
+                            <p>November 30, 2022 — Announcements, Research</p>
+                        </div>
+                        <div class="chat_gpt">
+                            <h6>ChatGPT: Optimizing Language Models for Dialogue</h6>
+                            <p>November 30, 2022 — Announcements, Research</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="chat_gpt">
+                            <h6>ChatGPT: Optimizing Language Models for Dialogue</h6>
+                            <p>November 30, 2022 — Announcements, Research</p>
+                        </div>
+                        <div class="chat_gpt">
+                            <h6>ChatGPT: Optimizing Language Models for Dialogue</h6>
+                            <p>November 30, 2022 — Announcements, Research</p>
+                        </div>
+                        <div class="chat_gpt">
+                            <h6>ChatGPT: Optimizing Language Models for Dialogue</h6>
+                            <p>November 30, 2022 — Announcements, Research</p>
+                        </div>
+                        <div class="chat_gpt">
+                            <h6>ChatGPT: Optimizing Language Models for Dialogue</h6>
+                            <p>November 30, 2022 — Announcements, Research</p>
+                        </div>
+                    </div>
+
+                    <div class="view_more_main">
+                        <div class="view_more_btn_container">
+                            <button class="not_hover_Btn_bg">View More</button>
+                            <button class="on_hover_btn">View More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer_logo">
+                            <img src="./images/footer-logo.png" alt="footer-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+            <div class="border_top_container"></div>
+            <div class="border_container">
+                <div class="container">
+                    <div class="footer_link_main">
+                        <div class="row justify-content-center align-items-center">
+
+                            <div class="col-md-2 text-center">
+                                <a class="nav-link-2 active2" href="./index.html">Homepage</a>
+                            </div>
+
+                            <div class="col-md-2 text-center">
+                                <a class="nav-link-2" href="#">Product</a>
+                            </div>
+
+                            <div class="col-md-2 text-center">
+                                <a class="nav-link-2" href="#">Pricing Page</a>
+                            </div>
+
+                            <div class="col-md-2 text-center">
+                                <a class="nav-link-2" href="#">Product Overview</a>
+                            </div>
+
+                            <div class="col-md-2 text-center">
+                                <a class="nav-link-2 ml-4" href="#">NewsBlog</a>
+                            </div>
+
+                            <div class="col-md-2 text-center">
+                                <a class="nav-link-2" href="#">Posts</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social_main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="follow_us_container">
+                                <h5>Follow Us</h5>
+                                <div>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+
+                                <div>
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+
+                                <div>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+
+                                <div>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="policies_main">
+                                <div>
+                                   <h6>Privacy policies</h6>
+                                </div>
+                                <div>
+                                    <h6>Terms to use</h6>
+                                </div>
+                                <div>
+                                    <h6>Responsibilities</h6>
+                                </div>
+                                <div>
+                                    <h6>Disclaimer</h6>
+                                </div>
+                                <div>
+                                    <h6 style="border-right: 0;">Site map</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="copy_right_container">
+                <h6>© Copyright. 2023 HYPERAI Technologies. Inc</h6>
+                <img src="./images/iso-logo.png" alt="iso-logo" />
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+    <!-- ---------------- links ------------------  -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        // SLIDER
+        $('.testimonial_carousel').slick({
+            infinite: true,
+            slidesToShow: 1, // Shows a three slides at a time
+            slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+            arrows: true, // Adds arrows to sides of slider
+            nextArrow: "<button type='button' class='slick-next pull-right'> <img src='./images/right-arrow.png' class='client_left_arrow' /></button>",
+            prevArrow: "<button type='button' class='slick-prev pull-right'> <img src='./images/left-arrow.png' class='client_right_arrow' /></button>",
+            dots: false, // Adds the dots on the bottom
+            autoplay: false,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplaySpeed: 1500,
+                    },
+                },
+                {
+                    breakpoint: 1008,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplaySpeed: 1500,
+                    },
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplaySpeed: 1500,
+                    },
+                },
+            ],
+        });
+    </script>
+
+    <script>
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+
+
+        function openCity(evt, productName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("active", "");
+            }
+            document.getElementById(productName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
