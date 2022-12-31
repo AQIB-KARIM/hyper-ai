@@ -239,6 +239,16 @@ img {
     top: 4px;
 }
 
+.dropdown-menu.show {
+    background-color: transparent;
+    border: 1px solid #00d08c;
+    text-align: start !important;
+}
+
+.dropdown-item {
+    color: #d3ffff;
+}
+
 .line-verticals {
     border-left: 1px solid #ededed;
     height: 18px;
@@ -273,7 +283,7 @@ a.nav-link-2.active2 {
     color: #24ce7b;
 }
 
-.nav-link-2:hover{
+.nav-link-2:hover {
     color: #24ce7b;
 }
 
@@ -371,7 +381,7 @@ li .dropdown .nav-link {
     transition: all .5s ease;
 }
 
-.order_now_btn button:hover{
+.order_now_btn button:hover {
     background-image: linear-gradient(to right, rgb(11, 96, 247) 0%, rgb(28, 164, 194) 49%, rgb(45, 232, 141) 100%)
 }
 
@@ -492,7 +502,7 @@ li .dropdown .nav-link {
     transition: all .5s ease;
 }
 
-.tick_btn_container button:hover{
+.tick_btn_container button:hover {
     background-image: linear-gradient(to right, rgb(11, 96, 247) 0%, rgb(28, 164, 194) 49%, rgb(45, 232, 141) 100%);
 }
 
@@ -562,18 +572,28 @@ li .dropdown .nav-link {
     width: 100%;
     max-width: 400px;
     object-fit: cover;
-    -webkit-animation: action 1.5s infinite  alternate;
-    animation: action 1.5s infinite  alternate;
+    -webkit-animation: action 1.5s infinite alternate;
+    animation: action 1.5s infinite alternate;
 }
 
 @-webkit-keyframes action {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
 }
 
 @keyframes action {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
 }
 
 .view_more_btn_container {
@@ -595,15 +615,15 @@ li .dropdown .nav-link {
     color: white;
 }
 
-.view_more_btn_container:hover .not_hover_Btn_bg{
+.view_more_btn_container:hover .not_hover_Btn_bg {
     display: none;
 }
 
-.view_more_btn_container .on_hover_btn{
+.view_more_btn_container .on_hover_btn {
     display: none;
 }
 
-.view_more_btn_container:hover .on_hover_btn{
+.view_more_btn_container:hover .on_hover_btn {
     display: block;
     background-image: url(./images/blue-bg-btn.png);
     background-size: cover;
@@ -619,7 +639,7 @@ li .dropdown .nav-link {
     color: white;
 }
 
-.view_more_main{
+.view_more_main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -658,9 +678,9 @@ li .dropdown .nav-link {
 
 /* About Us Section */
 
-.about_us_image_container{
-    -webkit-animation: action 1.5s infinite  alternate;
-    animation: action 1.5s infinite  alternate;
+.about_us_image_container {
+    -webkit-animation: action 1.5s infinite alternate;
+    animation: action 1.5s infinite alternate;
 }
 
 .about_us_text_container h4 {
@@ -734,6 +754,7 @@ li .dropdown .nav-link {
     width: 100%;
     max-width: 450px;
     object-fit: cover;
+
 }
 
 .border_top_container {
@@ -857,7 +878,7 @@ li .dropdown .nav-link {
     height: fit-content;
 }
 
-.policies_main h6:hover{
+.policies_main h6:hover {
     color: #00d08c;
     cursor: pointer;
 }
@@ -906,6 +927,7 @@ li .dropdown .nav-link {
 
     .graphic_cards_main button {
         margin-left: 0px;
+        font-size: 13px;
     }
 
     .nav-link {
@@ -914,7 +936,7 @@ li .dropdown .nav-link {
 
     .footer_logo img {
         width: 100%;
-        max-width: 400px;
+        max-width: 300px;
         object-fit: cover;
     }
 
@@ -924,11 +946,43 @@ li .dropdown .nav-link {
     }
 }
 
+@media(max-width:1024px) {
+    .nav-item {
+        margin-right: -4px;
+        font-size: 9px;
+        font-weight: 400;
+    }
+
+    .banner_text h4 {
+        font-size: 21px;
+    }
+
+    .banner_text h4 {
+        font-size: 19px;
+    }
+
+    .chat_gpt h6 {
+        font-size: 17px;
+    }
+
+    .nav-link-2 {
+        font-size: 13px;
+    }
+
+    .policies_main {
+        gap: 14px;
+    }
+
+    .policies_main h6 {
+        font-size: 12px;
+    }
+}
+
 
 @media(max-width:767px) {
 
     main {
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
 
     .policies_main {
@@ -995,14 +1049,14 @@ li .dropdown .nav-link {
     }
 
     .testimonial_container p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .slick-prev,
     .slick-next {
-        width: 40px;
-        height: 30px;
-        margin: -13px 12px;
+        width: auto;
+        height: auto;
+        margin: -25px 14px;
     }
 
     .tab_container_text h4 {
