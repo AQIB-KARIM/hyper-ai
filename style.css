@@ -395,6 +395,7 @@ li .dropdown .nav-link {
 .client_logo_container img {
     max-width: 100%;
     object-fit: cover;
+    margin: 0 auto;
 }
 
 /* Slider Section */
@@ -884,6 +885,7 @@ li .dropdown .nav-link {
 }
 
 
+
 @media(max-width:1360px) {
     .basic_card {
         max-width: 1300px;
@@ -978,8 +980,52 @@ li .dropdown .nav-link {
     }
 }
 
+@media(max-width:768px) {
+    .slick-vertical .slick-slide {
+        height: 90px;
+    }
+}
 
 @media(max-width:767px) {
+
+    .client_carousel .slick-dots li.slick-active button:before {
+        opacity: .75;
+        color: #eae2e2;
+    }
+
+    .client_carousel .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 12px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: '•';
+        text-align: center;
+        opacity: .25;
+        color: #cbc4c4;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .slick-slider {
+        margin-bottom: 0;
+    }
+
+    .client_logos img {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .slick-vertical .slick-slide {
+        height: 90px;
+    }
+
+    .banner_text h5 {
+        font-size: 30px;
+    }
 
     main {
         overflow-x: hidden !important;
@@ -1067,12 +1113,26 @@ li .dropdown .nav-link {
         font-size: 16px;
     }
 
+    .product_overview_section {
+        padding: 40px 10px;
+    }
+
+    .about_us_section .row {
+        flex-direction: column-reverse;
+    }
+
+    .about_us_image_container {
+        margin-top: 35px;
+    }
+
     .about_us_text_container p {
         font-size: 16px;
+        text-align: start;
     }
 
     .about_us_text_container h4 {
         font-size: 30px;
+        text-align: start;
     }
 
     .about_us_text_container h4 span {
@@ -1092,12 +1152,22 @@ li .dropdown .nav-link {
     }
 
     .about_us_text_container {
-        padding-top: 50px;
+        padding: 50px 13px 0px 13px;
+    }
+
+    .policies_main {
+        padding: 30px 26px;
     }
 
     .banner_text h4 {
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: 14px;
+        line-height: 33px;
+        margin-bottom: 0;
+    }
+
+    .about_btn {
+        float: unset;
     }
 
     .basic_card {
